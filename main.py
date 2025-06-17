@@ -4,17 +4,17 @@ from query_builder import get_sql_from_question
 from sql_runner import run_query
 
 def main():
-    print("💬 Ask a question about your data (type 'exit' to quit):")
+    print("Ask a question about your data (type 'exit' to quit):")
 
     while True:
-        question = input("🧠 You: ")
+        question = input("You: ")
 
         if question.lower() in ["exit", "quit"]:
-            print("👋 Goodbye!")
+            print("Goodbye!")
             break
 
         sql = get_sql_from_question(question)
-        print(f"\n📜 Generated SQL:\n{sql}\n")
+        print(f"\nGenerated SQL:\n{sql}\n")
 
         if sql.startswith("-- Sorry"):
             continue

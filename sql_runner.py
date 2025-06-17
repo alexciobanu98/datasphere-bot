@@ -27,4 +27,4 @@ def run_query(sql_query: str):
 
             print(tabulate(rows_as_lists, headers=headers, tablefmt="grid"))
     except Exception as e:
-        print(f"❌ Error running query:\n{e}")
+        print(f"Error running query:\n{e}")
