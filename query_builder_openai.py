@@ -43,7 +43,7 @@ SQL:
 
     try:
         response = openai.ChatCompletion.create(
-            model="gpt-4",  # You can use "gpt-3.5-turbo" if GPT-4 is not available
+            model="gpt-4.1",  
             messages=[{"role": "user", "content": prompt}],
             temperature=0,
             max_tokens=300,
