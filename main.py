@@ -1,6 +1,6 @@
 # main.py
 
-from query_builder import get_sql_from_question
+from query_builder_openai import get_sql_from_question
 from sql_runner import run_query
 
 def main():
